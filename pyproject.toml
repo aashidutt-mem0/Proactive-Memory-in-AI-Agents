@@ -1,0 +1,19 @@
+[project]
+name = "proactive-memory-demos"
+version = "0.1.0"
+description = "Testable demos for three proactive memory patterns."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+live = [
+  "mem0ai>=0.1.0",
+  "openai>=1.0.0",
+]
+test = [
+  "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
